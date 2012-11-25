@@ -1,7 +1,19 @@
 require 'dashing'
 
+REDMINE_ENDPOINT = ENV['REDMINE_ENDPOINT']
+REDMINE_API_KEY = ENV['REDMINE_API_KEY']
+BUG_BOARD_AUTH_TOKEN = ENV['BUG_BOARD_AUTH_TOKEN']
+
+
+require 'redmine_weary'
+RedmineWeary.configure do |config|
+  config.endpoint = REDMINE_ENDPOINT
+  config.api_key = REDMINE_API_KEY
+end
+require 'redmine_weary/client'
+
 configure do
-  set :auth_token, 'YOUR_AUTH_TOKEN'
+  set :auth_token, BUG_BOARD_AUTH_TOKEN
 
   helpers do
     def protected!

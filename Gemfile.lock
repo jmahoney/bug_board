@@ -1,6 +1,14 @@
+GIT
+  remote: git://github.com/jmahoney/redmine_weary.git
+  revision: dacdbcb92d365f4da9f4f606a5efb85b2252b016
+  specs:
+    redmine_weary (0.2.0)
+      weary (~> 1.1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
+    addressable (2.3.2)
     backports (2.6.5)
     coffee-script (2.2.0)
       coffee-script-source
@@ -21,6 +29,7 @@ GEM
       multi_json (~> 1.0)
     hike (1.2.1)
     multi_json (1.3.7)
+    promise (0.3.0)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
@@ -29,6 +38,7 @@ GEM
     rufus-scheduler (2.0.17)
       tzinfo (>= 0.3.23)
     sass (3.2.3)
+    simple_oauth (0.1.9)
     sinatra (1.3.3)
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
@@ -52,9 +62,16 @@ GEM
     thor (0.16.0)
     tilt (1.3.3)
     tzinfo (0.3.35)
+    weary (1.1.2)
+      addressable (~> 2.3.2)
+      multi_json (~> 1.3.0)
+      promise (~> 0.3.0)
+      rack (~> 1.4.0)
+      simple_oauth (~> 0.1.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   dashing
+  redmine_weary (~> 0.2.0)!
