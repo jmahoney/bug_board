@@ -1,8 +1,16 @@
-<% content_for(:title) { "My super sweet dashboard" } %>
+<% content_for(:title) { "Bug Board" } %>
 <div class="gridster">
   <ul>
+    
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="bugs" data-view="Number" data-title="Bugs" style="background-color:#96bf48;"></div>
+      <div data-id="new-urgent-bugs" data-view="Number" data-title="New Urgent Bugs" style="background-color:#F00"></div>
     </li>
+	
+	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="open-bugs" data-view="Number" data-title="Open Bugs" style="background-color:#96bf48;"></div>
+    </li>
+	
+    
+	
   </ul>
 </div>

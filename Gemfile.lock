@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/jmahoney/redmine_weary.git
-  revision: dacdbcb92d365f4da9f4f606a5efb85b2252b016
+  revision: 2ffe4f4c5fbce1b75e2580253914f56c17b70921
   specs:
-    redmine_weary (0.2.0)
+    redmine_weary (0.3.0)
       weary (~> 1.1.0)
 
 GEM
@@ -74,4 +74,4 @@ PLATFORMS
 
 DEPENDENCIES
   dashing
-  redmine_weary (~> 0.2.0)!
+  redmine_weary (~> 0.3.0)!
