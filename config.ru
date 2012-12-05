@@ -1,4 +1,5 @@
 require 'dashing'
+require 'rack/ssl'
 
 REDMINE_ENDPOINT = ENV['BUG_BOARD_REDMINE_ENDPOINT']
 REDMINE_API_KEY = ENV['BUG_BOARD_REDMINE_API_KEY']
@@ -23,6 +24,10 @@ RedmineWeary.configure do |config|
 end
 require 'redmine_weary/client'
 
+
+configure :production do
+  use Rack::SSL
+end
 
 configure do
   set :auth_token, BUG_BOARD_AUTH_TOKEN
