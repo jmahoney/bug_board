@@ -24,6 +24,10 @@ end
 require 'redmine_weary/client'
 
 
+configure :production do
+  use Rack::SSL
+end
+
 configure do
   set :auth_token, BUG_BOARD_AUTH_TOKEN
 
