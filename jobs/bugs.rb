@@ -10,14 +10,15 @@ SCHEDULER.every '300s' do
                                                  :status_id => OPEN_STATUS)
   
   last_urgent_count = current_urgent_count
-  current_urgent_count = RedmineWeary::Issue.count(:tracker_id => BUG_TRACKER, :priority_id => URGENT_PRIORITY)
+  current_urgent_count = RedmineWeary::Issue.count(:tracker_id => BUG_TRACKER, 
+                                                   :priority_id => URGENT_PRIORITY)
                                                            
   last_untriaged_count = current_untriaged_count
   
   
   options = {:tracker_id => BUG_TRACKER, :status_id => NEW_STATUS, :priority_id => URGENT_PRIORITY}
   untriaged_field = "cf_#{TRIAGED_FIELD}".to_sym
-  options[untriaged_field] = "1"
+  options[untriaged_field] = "0"
   current_untriaged_count = RedmineWeary::Issue.count(options)                
   
                                                        
