@@ -1,12 +1,13 @@
 current_open_count = 0
 current_urgent_count = 0
 current_untriaged_count = 0
+
 SCHEDULER.every '300s' do
   
   
   last_open_count = current_open_count
   current_open_count = RedmineWeary::Issue.count(:tracker_id => BUG_TRACKER,
-                                                     :status_id => OPEN_STATUS)
+                                                 :status_id => OPEN_STATUS)
   
   last_urgent_count = current_urgent_count
   current_urgent_count = RedmineWeary::Issue.count(:tracker_id => BUG_TRACKER, :priority_id => URGENT_PRIORITY)

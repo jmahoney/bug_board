@@ -1,19 +1,32 @@
+<script type='text/javascript'>
+$(function() {
+Dashing.gridsterLayout('[{"col":1,"row":2},{"col":1,"row":1},{"col":2,"row":1},{"col":2,"row":2},{"col":3,"row":1}]')
+});
+</script>
 <% content_for(:title) { "Bug Board" } %>
 <div class="gridster">
   <ul>
     
+  	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-view="Clock"></div>
+  	</li>
 	
 	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="untriaged-bugs" data-view="Number" data-title="Untriaged Urgent Bugs" style="background-color:#F00"></div>
 	</li>
 	
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="urgent-bugs" data-view="Number" data-title="Open Urgent Bugs" style="background-color:#F00"></div>
+      <div data-id="urgent-bugs" data-view="Number" data-title="Open Urgent Bugs" style="background-color:#C00"></div>
     </li>
 	
 	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="open-bugs" data-view="Number" data-title="All Bugs" style="background-color:#96bf48;"></div>
     </li>
+	
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="projects" data-view="List" data-unordered="true" data-title="Projects" data-moreinfo="# of urgent and high bugs per project"></div>
+    </li>
+	
 	
     
 	
