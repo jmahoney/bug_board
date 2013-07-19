@@ -2,7 +2,7 @@ current_open_count = 0
 current_urgent_count = 0
 current_untriaged_count = 0
 
-SCHEDULER.every '300s' do
+SCHEDULER.every '3m' do
   
   
   last_open_count = current_open_count

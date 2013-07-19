@@ -1,0 +1,41 @@
+---
+buzzwords: ! 'data: {"items":[{"label":"Pivoting","value":5},{"label":"Turn-key","value":5},{"label":"Streamlininess","value":3},{"label":"Enterprise","value":3},{"label":"Web
+  2.0","value":5},{"label":"Paradigm shift","value":4},{"label":"Synergy","value":3},{"label":"Exit
+  strategy","value":4},{"label":"Leverage","value":4}],"id":"buzzwords","updatedAt":1374206037}
+
+
+'
+open-features: ! 'data: {"current":141,"last":141,"id":"open-features","updatedAt":1374205058}
+
+
+'
+urgent-features: ! 'data: {"current":1,"last":1,"id":"urgent-features","updatedAt":1374205058}
+
+
+'
+high-features: ! 'data: {"current":34,"last":34,"id":"high-features","updatedAt":1374205058}
+
+
+'
+open-bugs: ! 'data: {"current":71,"last":71,"id":"open-bugs","updatedAt":1374205055}
+
+
+'
+urgent-bugs: ! 'data: {"current":5,"last":5,"id":"urgent-bugs","updatedAt":1374205055}
+
+
+'
+untriaged-bugs: ! 'data: {"current":0,"last":0,"id":"untriaged-bugs","updatedAt":1374205055}
+
+
+'
+projects: ! 'data: {"items":[{"label":"All Website Support","value":"3 | 8"},{"label":"Creative
+  NZ - Support","value":"0 | 1"},{"label":"EWRB","value":"0 | 0"},{"label":"Hamilton
+  and Waikato Tourism","value":"0 | 2"},{"label":"Healthcare NZ","value":"0 | 0"},{"label":"AEBC
+  / ESI","value":"0 | 0"},{"label":"Labour (eTrac)","value":"0 | 6"},{"label":"Learning
+  Connexion","value":"0 | 0"},{"label":"NZSIS","value":"0 | 0"},{"label":"Office of
+  the Ombudsman","value":"1 | 0"},{"label":"RealEDGE","value":"0 | 0"},{"label":"STC
+  - Support","value":"0 | 0"}],"id":"projects","updatedAt":1374205065}
+
+
+'

@@ -1,30 +1,31 @@
 <script type='text/javascript'>
 $(function() {
-Dashing.gridsterLayout('[{"col":1,"row":2},{"col":1,"row":1},{"col":2,"row":1},{"col":2,"row":2},{"col":3,"row":1}]')
+Dashing.gridsterLayout('[{"col":2,"row":2},{"col":1,"row":1},{"col":2,"row":1},{"col":1,"row":2},{"col":3,"row":1}]')
 });
 </script>
 <% content_for(:title) { "Bug Board" } %>
 <div class="gridster">
   <ul>
     
-  	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-view="Clock"></div>
-  	</li>
-	
-	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="untriaged-bugs" data-view="Number" data-title="Untriaged Urgent Bugs" style="background-color:#F00"></div>
-	</li>
-	
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="urgent-bugs" data-view="Number" data-title="Open Urgent Bugs" style="background-color:#C00"></div>
+      <div data-id="high-features" data-view="Number" data-title="Open High Features" style="background-color:#F4B575"></div>
+    </li>
+  	
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="untriaged-bugs" data-view="Number" data-title="Untriaged Urgent Bugs" style="background-color:#AC4142"></div>
     </li>
 	
-	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="open-bugs" data-view="Number" data-title="All Bugs" style="background-color:#96bf48;"></div>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="urgent-bugs" data-view="Number" data-title="Open Urgent Bugs" style="background-color:#AA759F"></div>
+    </li>
+	
+	  <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="urgent-features" data-view="Number" data-title="Open Urgent Features" style="background-color:#D28445;"></div>
     </li>
 	
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
-      <div data-id="projects" data-view="List" data-unordered="true" data-title="Projects" data-moreinfo="# of urgent and high bugs per project"></div>
+      <div data-id="projects" data-view="List" data-unordered="true" data-title="Projects" data-moreinfo="# of urgent and high bugs and features per project"  style="background-color:#6A95B5;"></div>
     </li>
 	
 	
